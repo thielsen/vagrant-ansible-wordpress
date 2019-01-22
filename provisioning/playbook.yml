@@ -4,6 +4,11 @@
   tasks:
     - name: Make sure we can connect
       ping:
+    - name: Install required tools
+      apt: name={{item}} state=installed
+      with_items:
+        - unzip
+
 
 # PHP
     - name: Add the ondrej PHP PPA
@@ -50,3 +55,29 @@
     - name: Create my.cnf
       template: src=templates/mysql/my.cnf dest=/root/.my.cnf
       when: mysql_new_root_pass.changed
+
+# nginx
+
+    - name: Install nginx
+      apt: name=nginx state=present
+    - name: Start nginx
+      service: name=nginx state=started
+    - name: Create nginx config
+      template: src=templates/nginx/default dest=/etc/nginx/sites-available/default
+      notify: restart nginx
+
+# Wordpress
+
+    - name: Copy wordpress.zip into tmp
+      copy: src=files/wordpress.zip dest=/tmp/wordpress.zip
+    - name: Unzip WordPress
+      unarchive: src=/tmp/wordpress.zip dest=/tmp copy=no creates=/tmp/wordpress/wp-settings.php
+    - name: Create project folder
+      file: dest=/var/www/html/wordpress state=directory
+    - name: Copy WordPress files
+      command: cp -a /tmp/wordpress/. /var/www/html/wordpress creates=/var/www/html/wordpress/wp-settings.php
+
+
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
