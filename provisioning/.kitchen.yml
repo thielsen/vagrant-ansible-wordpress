@@ -1,5 +1,7 @@
 ---
   driver:
+    name: docker
+    use_sudo: false
   provisioner:
     name: ansible_playbook
     playbook: playbook.yml
@@ -9,8 +11,10 @@
   platforms:
     - name: ubuntu
       driver_config:
-        image: ubuntu:14.04
+        image: ubuntu:16.04
   suites:
     - name: default
+  transport:
+    max_ssh_sessions: 6
   verifier:
     ruby_bindir: '/usr/bin'

@@ -1,0 +1,82 @@
+I, [2019-01-24T14:38:28.262892 #54024]  INFO -- default-ubuntu: -----> Converging <default-ubuntu>...
+I, [2019-01-24T14:38:28.264112 #54024]  INFO -- default-ubuntu: Preparing files for transfer
+I, [2019-01-24T14:38:28.264172 #54024]  INFO -- default-ubuntu: Preparing playbook
+I, [2019-01-24T14:38:28.264468 #54024]  INFO -- default-ubuntu: Preparing inventory
+I, [2019-01-24T14:38:28.264516 #54024]  INFO -- default-ubuntu: Preparing modules
+I, [2019-01-24T14:38:28.264679 #54024]  INFO -- default-ubuntu: nothing to do for modules
+I, [2019-01-24T14:38:28.264716 #54024]  INFO -- default-ubuntu: Preparing roles
+I, [2019-01-24T14:38:28.473315 #54024]  INFO -- default-ubuntu: Preparing ansible.cfg file
+I, [2019-01-24T14:38:28.473440 #54024]  INFO -- default-ubuntu: Empty ansible.cfg generated
+I, [2019-01-24T14:38:28.473595 #54024]  INFO -- default-ubuntu: Preparing group_vars
+I, [2019-01-24T14:38:28.473774 #54024]  INFO -- default-ubuntu: nothing to do for group_vars
+I, [2019-01-24T14:38:28.473816 #54024]  INFO -- default-ubuntu: Preparing additional_copy_path
+I, [2019-01-24T14:38:28.473951 #54024]  INFO -- default-ubuntu: Preparing host_vars
+I, [2019-01-24T14:38:28.474102 #54024]  INFO -- default-ubuntu: nothing to do for host_vars
+I, [2019-01-24T14:38:28.474146 #54024]  INFO -- default-ubuntu: Preparing hosts file
+I, [2019-01-24T14:38:28.474315 #54024]  INFO -- default-ubuntu: Preparing spec
+I, [2019-01-24T14:38:28.474428 #54024]  INFO -- default-ubuntu: nothing to do for spec
+I, [2019-01-24T14:38:28.474464 #54024]  INFO -- default-ubuntu: Preparing library plugins
+I, [2019-01-24T14:38:28.474651 #54024]  INFO -- default-ubuntu: nothing to do for library plugins
+I, [2019-01-24T14:38:28.474688 #54024]  INFO -- default-ubuntu: Preparing callback plugins
+I, [2019-01-24T14:38:28.474868 #54024]  INFO -- default-ubuntu: nothing to do for callback plugins
+I, [2019-01-24T14:38:28.474904 #54024]  INFO -- default-ubuntu: Preparing filter_plugins
+I, [2019-01-24T14:38:28.475089 #54024]  INFO -- default-ubuntu: nothing to do for filter_plugins
+I, [2019-01-24T14:38:28.475124 #54024]  INFO -- default-ubuntu: Preparing lookup_plugins
+I, [2019-01-24T14:38:28.475302 #54024]  INFO -- default-ubuntu: nothing to do for lookup_plugins
+I, [2019-01-24T14:38:28.475387 #54024]  INFO -- default-ubuntu: Preparing ansible vault password
+I, [2019-01-24T14:38:28.475513 #54024]  INFO -- default-ubuntu: Preparing additional_ssh_private_keys
+I, [2019-01-24T14:38:28.475605 #54024]  INFO -- default-ubuntu: nothing to do for additional_ssh_private_keys
+I, [2019-01-24T14:38:28.475640 #54024]  INFO -- default-ubuntu: Finished Preparing files for transfer
+I, [2019-01-24T14:38:28.475832 #54024]  INFO -- default-ubuntu: Installing ansible, will try to determine platform os
+I, [2019-01-24T14:38:28.477079 #54024]  INFO -- default-ubuntu: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:22>)
+I, [2019-01-24T14:38:29.479190 #54024]  INFO -- default-ubuntu: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:22>)
+I, [2019-01-24T14:38:30.482858 #54024]  INFO -- default-ubuntu: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:22>)
+I, [2019-01-24T14:38:31.488164 #54024]  INFO -- default-ubuntu: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:22>)
+W, [2019-01-24T14:38:32.491485 #54024]  WARN -- default-ubuntu: [SSH] connection failed, terminating (#<Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:22>)
+E, [2019-01-24T14:38:32.531511 #54024] ERROR -- default-ubuntu: Converge failed on instance <default-ubuntu>.
+E, [2019-01-24T14:38:32.531621 #54024] ERROR -- default-ubuntu: ------Exception-------
+E, [2019-01-24T14:38:32.531651 #54024] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2019-01-24T14:38:32.531671 #54024] ERROR -- default-ubuntu: Message: SSH session could not be established
+E, [2019-01-24T14:38:32.531688 #54024] ERROR -- default-ubuntu: ----------------------
+E, [2019-01-24T14:38:32.531713 #54024] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2019-01-24T14:38:32.531729 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-01-24T14:38:32.531744 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2019-01-24T14:38:32.531759 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-01-24T14:38:32.531776 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-01-24T14:38:32.531792 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-01-24T14:38:32.531807 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-01-24T14:38:32.531821 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-01-24T14:38:32.531836 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-01-24T14:38:32.531851 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-01-24T14:38:32.531865 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-01-24T14:38:32.531880 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-01-24T14:38:32.531894 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-01-24T14:38:32.531909 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-01-24T14:38:32.531923 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:162:in `verify'
+E, [2019-01-24T14:38:32.531941 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-01-24T14:38:32.531956 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-01-24T14:38:32.531971 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-01-24T14:38:32.531985 #54024] ERROR -- default-ubuntu: ----End Backtrace-----
+E, [2019-01-24T14:38:32.532000 #54024] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2019-01-24T14:38:32.532014 #54024] ERROR -- default-ubuntu: Class: Kitchen::Transport::SshFailed
+E, [2019-01-24T14:38:32.532029 #54024] ERROR -- default-ubuntu: Message: SSH session could not be established
+E, [2019-01-24T14:38:32.532043 #54024] ERROR -- default-ubuntu: ----------------------
+E, [2019-01-24T14:38:32.532057 #54024] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2019-01-24T14:38:32.532072 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-01-24T14:38:32.532086 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2019-01-24T14:38:32.532100 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-01-24T14:38:32.532130 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-01-24T14:38:32.532146 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-01-24T14:38:32.532161 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-01-24T14:38:32.532175 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-01-24T14:38:32.532190 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-01-24T14:38:32.532204 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-01-24T14:38:32.532218 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-01-24T14:38:32.532233 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-01-24T14:38:32.532248 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-01-24T14:38:32.532262 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-01-24T14:38:32.532279 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:162:in `verify'
+E, [2019-01-24T14:38:32.532294 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-01-24T14:38:32.532309 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-01-24T14:38:32.532323 #54024] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-01-24T14:38:32.532337 #54024] ERROR -- default-ubuntu: ----End Backtrace-----

@@ -1,0 +1,184 @@
+I, [2019-01-24T15:27:55.841015 #56350]  INFO -- default-ubuntu: -----> Converging <default-ubuntu>...
+I, [2019-01-24T15:27:55.841730 #56350]  INFO -- default-ubuntu: Preparing files for transfer
+I, [2019-01-24T15:27:55.841784 #56350]  INFO -- default-ubuntu: Preparing playbook
+I, [2019-01-24T15:27:55.842094 #56350]  INFO -- default-ubuntu: Preparing inventory
+I, [2019-01-24T15:27:55.842140 #56350]  INFO -- default-ubuntu: Preparing modules
+I, [2019-01-24T15:27:55.842296 #56350]  INFO -- default-ubuntu: nothing to do for modules
+I, [2019-01-24T15:27:55.842335 #56350]  INFO -- default-ubuntu: Preparing roles
+I, [2019-01-24T15:27:55.890812 #56350]  INFO -- default-ubuntu: Preparing ansible.cfg file
+I, [2019-01-24T15:27:55.890944 #56350]  INFO -- default-ubuntu: Empty ansible.cfg generated
+I, [2019-01-24T15:27:55.891132 #56350]  INFO -- default-ubuntu: Preparing group_vars
+I, [2019-01-24T15:27:55.891310 #56350]  INFO -- default-ubuntu: nothing to do for group_vars
+I, [2019-01-24T15:27:55.891350 #56350]  INFO -- default-ubuntu: Preparing additional_copy_path
+I, [2019-01-24T15:27:55.891488 #56350]  INFO -- default-ubuntu: Preparing host_vars
+I, [2019-01-24T15:27:55.891645 #56350]  INFO -- default-ubuntu: nothing to do for host_vars
+I, [2019-01-24T15:27:55.891688 #56350]  INFO -- default-ubuntu: Preparing hosts file
+I, [2019-01-24T15:27:55.891858 #56350]  INFO -- default-ubuntu: Preparing spec
+I, [2019-01-24T15:27:55.891967 #56350]  INFO -- default-ubuntu: nothing to do for spec
+I, [2019-01-24T15:27:55.892007 #56350]  INFO -- default-ubuntu: Preparing library plugins
+I, [2019-01-24T15:27:55.892211 #56350]  INFO -- default-ubuntu: nothing to do for library plugins
+I, [2019-01-24T15:27:55.892247 #56350]  INFO -- default-ubuntu: Preparing callback plugins
+I, [2019-01-24T15:27:55.892454 #56350]  INFO -- default-ubuntu: nothing to do for callback plugins
+I, [2019-01-24T15:27:55.892492 #56350]  INFO -- default-ubuntu: Preparing filter_plugins
+I, [2019-01-24T15:27:55.892698 #56350]  INFO -- default-ubuntu: nothing to do for filter_plugins
+I, [2019-01-24T15:27:55.892735 #56350]  INFO -- default-ubuntu: Preparing lookup_plugins
+I, [2019-01-24T15:27:55.892943 #56350]  INFO -- default-ubuntu: nothing to do for lookup_plugins
+I, [2019-01-24T15:27:55.893034 #56350]  INFO -- default-ubuntu: Preparing ansible vault password
+I, [2019-01-24T15:27:55.893167 #56350]  INFO -- default-ubuntu: Preparing additional_ssh_private_keys
+I, [2019-01-24T15:27:55.893273 #56350]  INFO -- default-ubuntu: nothing to do for additional_ssh_private_keys
+I, [2019-01-24T15:27:55.893311 #56350]  INFO -- default-ubuntu: Finished Preparing files for transfer
+I, [2019-01-24T15:27:55.893538 #56350]  INFO -- default-ubuntu: Installing ansible, will try to determine platform os
+I, [2019-01-24T15:27:56.024348 #56350]  INFO -- default-ubuntu: Transferring files to <default-ubuntu>
+I, [2019-01-24T15:28:01.096634 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:01.096693 #56350]  INFO -- default-ubuntu: PLAY [all] *********************************************************************
+I, [2019-01-24T15:28:01.106796 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:01.106854 #56350]  INFO -- default-ubuntu: TASK [Gathering Facts] *********************************************************
+I, [2019-01-24T15:28:04.982393 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:05.008871 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:05.008958 #56350]  INFO -- default-ubuntu: TASK [sgreen.common : Install required tools] **********************************
+I, [2019-01-24T15:28:05.025562 #56350]  INFO -- default-ubuntu: [0;35m[DEPRECATION WARNING]: Invoking "apt" only once while using a loop via [0m
+I, [2019-01-24T15:28:05.025624 #56350]  INFO -- default-ubuntu: [0;35msquash_actions is deprecated. Instead of using a loop to supply multiple items [0m
+I, [2019-01-24T15:28:05.025654 #56350]  INFO -- default-ubuntu: [0;35mand specifying `name: "{{item}}"`, please use `name: ['unzip']` and remove the [0m
+I, [2019-01-24T15:28:05.025678 #56350]  INFO -- default-ubuntu: [0;35mloop. This feature will be removed in version 2.11. Deprecation warnings can be[0m
+I, [2019-01-24T15:28:05.025721 #56350]  INFO -- default-ubuntu: [0;35m disabled by setting deprecation_warnings=False in ansible.cfg.[0m
+I, [2019-01-24T15:28:07.695933 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost] => (item=[u'unzip'])[0m
+I, [2019-01-24T15:28:07.697819 #56350]  INFO -- default-ubuntu: [0;35m[DEPRECATION WARNING]: State 'installed' is deprecated. Using state 'present' [0m
+I, [2019-01-24T15:28:07.698225 #56350]  INFO -- default-ubuntu: [0;35minstead.. This feature will be removed in version 2.9. Deprecation warnings can[0m
+I, [2019-01-24T15:28:07.698445 #56350]  INFO -- default-ubuntu: [0;35m be disabled by setting deprecation_warnings=False in ansible.cfg.[0m
+I, [2019-01-24T15:28:07.724892 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:07.725113 #56350]  INFO -- default-ubuntu: TASK [sgreen.php : Add the ondrej PHP PPA] *************************************
+I, [2019-01-24T15:28:08.053426 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:08.078110 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:08.078356 #56350]  INFO -- default-ubuntu: TASK [sgreen.php : Update the apt cache] ***************************************
+I, [2019-01-24T15:28:09.042407 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:09.065819 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:09.066099 #56350]  INFO -- default-ubuntu: TASK [sgreen.php : Install PHP] ************************************************
+I, [2019-01-24T15:28:09.080567 #56350]  INFO -- default-ubuntu: [0;35m[DEPRECATION WARNING]: Invoking "apt" only once while using a loop via [0m
+I, [2019-01-24T15:28:09.080652 #56350]  INFO -- default-ubuntu: [0;35msquash_actions is deprecated. Instead of using a loop to supply multiple items [0m
+I, [2019-01-24T15:28:09.080679 #56350]  INFO -- default-ubuntu: [0;35mand specifying `name: "{{item}}"`, please use `name: ['php', 'php-fpm', 'php-[0m
+I, [2019-01-24T15:28:09.080701 #56350]  INFO -- default-ubuntu: [0;35mmysql', 'php-xml']` and remove the loop. This feature will be removed in [0m
+I, [2019-01-24T15:28:09.080721 #56350]  INFO -- default-ubuntu: [0;35mversion 2.11. Deprecation warnings can be disabled by setting [0m
+I, [2019-01-24T15:28:09.080740 #56350]  INFO -- default-ubuntu: [0;35mdeprecation_warnings=False in ansible.cfg.[0m
+I, [2019-01-24T15:28:11.139113 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost] => (item=[u'php', u'php-fpm', u'php-mysql', u'php-xml'])[0m
+I, [2019-01-24T15:28:11.165853 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:11.166082 #56350]  INFO -- default-ubuntu: TASK [sgreen.php : Remove apache2] *********************************************
+I, [2019-01-24T15:28:12.144850 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:12.174190 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:12.174467 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : Install MySQL] ********************************************
+I, [2019-01-24T15:28:12.191019 #56350]  INFO -- default-ubuntu: [0;35m[DEPRECATION WARNING]: Invoking "apt" only once while using a loop via [0m
+I, [2019-01-24T15:28:12.191105 #56350]  INFO -- default-ubuntu: [0;35msquash_actions is deprecated. Instead of using a loop to supply multiple items [0m
+I, [2019-01-24T15:28:12.191134 #56350]  INFO -- default-ubuntu: [0;35mand specifying `name: "{{item}}"`, please use `name: ['mysql-server', 'python-[0m
+I, [2019-01-24T15:28:12.191157 #56350]  INFO -- default-ubuntu: [0;35mmysqldb']` and remove the loop. This feature will be removed in version 2.11. [0m
+I, [2019-01-24T15:28:12.191178 #56350]  INFO -- default-ubuntu: [0;35mDeprecation warnings can be disabled by setting deprecation_warnings=False in [0m
+I, [2019-01-24T15:28:12.191198 #56350]  INFO -- default-ubuntu: [0;35mansible.cfg.[0m
+I, [2019-01-24T15:28:14.238999 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost] => (item=[u'mysql-server', u'python-mysqldb'])[0m
+I, [2019-01-24T15:28:14.265108 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:14.265172 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : ensure mysql is started] **********************************
+I, [2019-01-24T15:28:15.005178 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:15.029247 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:15.029323 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : Generate new root password] *******************************
+I, [2019-01-24T15:28:15.486542 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:15.508991 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:15.509048 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : Remove anonymous users] ***********************************
+I, [2019-01-24T15:28:15.734821 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:15.759359 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:15.759428 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : Remove test database] *************************************
+I, [2019-01-24T15:28:15.999255 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:16.023680 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:16.023755 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : Update root password] *************************************
+I, [2019-01-24T15:28:16.154801 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost] => (item=b15f71e88f4b)[0m
+I, [2019-01-24T15:28:16.257870 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost] => (item=127.0.0.1)[0m
+I, [2019-01-24T15:28:16.363814 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost] => (item=::1)[0m
+I, [2019-01-24T15:28:16.512683 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost] => (item=localhost)[0m
+I, [2019-01-24T15:28:16.538735 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:16.538793 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : Output new root password] *********************************
+I, [2019-01-24T15:28:16.565312 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost] => {[0m
+I, [2019-01-24T15:28:16.565405 #56350]  INFO -- default-ubuntu: [0;32m    "msg": "New root password is 30daf599cff8a2"[0m
+I, [2019-01-24T15:28:16.565436 #56350]  INFO -- default-ubuntu: [0;32m}[0m
+I, [2019-01-24T15:28:16.592573 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:16.592634 #56350]  INFO -- default-ubuntu: TASK [sgreen.mysql : Create my.cnf] ********************************************
+I, [2019-01-24T15:28:16.945823 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:16.970199 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:16.970266 #56350]  INFO -- default-ubuntu: TASK [sgreen.nginx : Install nginx] ********************************************
+I, [2019-01-24T15:28:23.097981 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:23.130824 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:23.130903 #56350]  INFO -- default-ubuntu: TASK [sgreen.nginx : Start nginx] **********************************************
+I, [2019-01-24T15:28:23.765704 #56350]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2019-01-24T15:28:23.790993 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:23.791063 #56350]  INFO -- default-ubuntu: TASK [sgreen.nginx : Create nginx config] **************************************
+I, [2019-01-24T15:28:24.491674 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:24.516876 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:24.516947 #56350]  INFO -- default-ubuntu: TASK [sgreen.wordpress : Copy wordpress.zip into tmp] **************************
+I, [2019-01-24T15:28:24.756701 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:24.781810 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:24.782201 #56350]  INFO -- default-ubuntu: TASK [sgreen.wordpress : Unzip WordPress] **************************************
+I, [2019-01-24T15:28:27.025854 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:27.055693 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:27.055763 #56350]  INFO -- default-ubuntu: TASK [sgreen.wordpress : Create project folder] ********************************
+I, [2019-01-24T15:28:27.330222 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:27.354774 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:27.355128 #56350]  INFO -- default-ubuntu: TASK [sgreen.wordpress : Copy WordPress files] *********************************
+I, [2019-01-24T15:28:27.801766 #56350]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2019-01-24T15:28:27.825358 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:27.825430 #56350]  INFO -- default-ubuntu: TASK [sgreen.wordpress : Create WordPress MySQL database] **********************
+I, [2019-01-24T15:28:27.953132 #56350]  INFO -- default-ubuntu: [0;31mfatal: [localhost]: FAILED! => {"changed": false, "msg": "unable to find /home/kitchen/.my.cnf. Exception message: (1045, \"Access denied for user 'root'@'localhost' (using password: NO)\")"}[0m
+I, [2019-01-24T15:28:27.955531 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:27.955575 #56350]  INFO -- default-ubuntu: RUNNING HANDLER [sgreen.nginx : restart nginx] *********************************
+I, [2019-01-24T15:28:27.959212 #56350]  INFO -- default-ubuntu: 	to retry, use: --limit @/tmp/kitchen/playbook.retry
+I, [2019-01-24T15:28:27.959266 #56350]  INFO -- default-ubuntu: 
+I, [2019-01-24T15:28:27.959291 #56350]  INFO -- default-ubuntu: PLAY RECAP *********************************************************************
+I, [2019-01-24T15:28:27.959458 #56350]  INFO -- default-ubuntu: [0;31mlocalhost[0m                  : [0;32mok=21  [0m [0;33mchanged=9   [0m unreachable=0    [0;31mfailed=1   [0m
+I, [2019-01-24T15:28:27.959485 #56350]  INFO -- default-ubuntu: 
+E, [2019-01-24T15:28:28.022440 #56350] ERROR -- default-ubuntu: Converge failed on instance <default-ubuntu>.
+E, [2019-01-24T15:28:28.022548 #56350] ERROR -- default-ubuntu: ------Exception-------
+E, [2019-01-24T15:28:28.022575 #56350] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2019-01-24T15:28:28.022594 #56350] ERROR -- default-ubuntu: Message: SSH exited (2) for command: [          
+          
+          ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules          /tmp/kitchen/playbook.yml
+]
+E, [2019-01-24T15:28:28.022613 #56350] ERROR -- default-ubuntu: ----------------------
+E, [2019-01-24T15:28:28.022629 #56350] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2019-01-24T15:28:28.022646 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-01-24T15:28:28.022664 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2019-01-24T15:28:28.022681 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-01-24T15:28:28.022698 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-01-24T15:28:28.022717 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-01-24T15:28:28.022786 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-01-24T15:28:28.022816 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-01-24T15:28:28.022837 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-01-24T15:28:28.022873 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-01-24T15:28:28.022892 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-01-24T15:28:28.022909 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-01-24T15:28:28.022926 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-01-24T15:28:28.022943 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-01-24T15:28:28.022960 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:162:in `verify'
+E, [2019-01-24T15:28:28.022977 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-01-24T15:28:28.022993 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-01-24T15:28:28.023010 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-01-24T15:28:28.023027 #56350] ERROR -- default-ubuntu: ----End Backtrace-----
+E, [2019-01-24T15:28:28.023043 #56350] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2019-01-24T15:28:28.023059 #56350] ERROR -- default-ubuntu: Class: Kitchen::Transport::SshFailed
+E, [2019-01-24T15:28:28.023075 #56350] ERROR -- default-ubuntu: Message: SSH exited (2) for command: [          
+          
+          ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules          /tmp/kitchen/playbook.yml
+]
+E, [2019-01-24T15:28:28.023092 #56350] ERROR -- default-ubuntu: ----------------------
+E, [2019-01-24T15:28:28.023108 #56350] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2019-01-24T15:28:28.023124 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-01-24T15:28:28.023140 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2019-01-24T15:28:28.023157 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-01-24T15:28:28.023173 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-01-24T15:28:28.023190 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-01-24T15:28:28.023207 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-01-24T15:28:28.023223 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-01-24T15:28:28.023240 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-01-24T15:28:28.023293 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-01-24T15:28:28.023317 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-01-24T15:28:28.023334 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-01-24T15:28:28.023364 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-01-24T15:28:28.023382 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-01-24T15:28:28.023398 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:162:in `verify'
+E, [2019-01-24T15:28:28.023415 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-01-24T15:28:28.023432 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-01-24T15:28:28.023448 #56350] ERROR -- default-ubuntu: /Users/simon/.rvm/gems/ruby-2.6.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-01-24T15:28:28.023465 #56350] ERROR -- default-ubuntu: ----End Backtrace-----

@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/Users/simon/Projects/ansible/tryout/ansible-wordpress/provisioning/.kitchen/docker_id_rsa"
+image_id: e791cba9db2f
+container_id: b15f71e88f4b9aca9e9dedbd38ab26b1078e44b6270c1342fcd7a3f59e73a376
+hostname: localhost
+port: 32773
+last_action: create
+last_error: Kitchen::ActionFailed
