@@ -10,8 +10,8 @@
 - name: Copy WordPress files
   command: cp -a /tmp/wordpress/. /var/www/html/wordpress creates=/var/www/html/wordpress/wp-settings.php
 - name: Create WordPress MySQL database
-  mysql_db: name=wordpress state=present
+  mysql_db: name={{database_name}} state=present
 - name: Create WordPress MySQL user
-  mysql_user: name=wordpress host=localhost password=superpass1234 priv=wordpress.*:ALL
+  mysql_user: name={{database_user}} host=localhost password={{database_password}} priv=wordpress.*:ALL
 - name: Create wp-config
   template: src=wp-config.php dest=/var/www/html/wordpress/wp-config.php

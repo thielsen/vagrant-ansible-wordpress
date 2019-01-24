@@ -2,4 +2,7 @@
 - hosts: all
   become: true
   roles:
-    - sgreen.wordpress
+    - role: sgreen.wordpress
+      database_name: test_wp
+      database_user: test_wp
+      database_password: testtest1234
